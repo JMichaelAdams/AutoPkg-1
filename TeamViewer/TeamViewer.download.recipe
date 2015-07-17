@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest TeamViewer disk image.</string>
 	<key>Identifier</key>
-	<string>io.github.Ubertec.download.TeamViewer</string>
+	<string>com.github.Ubertec.download.TeamViewer</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
