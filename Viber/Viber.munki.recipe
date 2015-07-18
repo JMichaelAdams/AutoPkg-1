@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Download the latest version of Viber and imports it into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.Ubertec.autopkg.munki.viber</string>
+    <string>com.github.Ubertec.munki.viber</string>
     <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIR</key>
