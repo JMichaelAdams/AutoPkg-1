@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the current release version of 1Password and imports into Munki.</string>
+	<string>Downloads the current release version of ADPasswordMonitor and imports into Munki.</string>
 	<key>Identifier</key>
 	<string>com.github.Ubertec.munki.ADPassMon</string>
 	<key>Input</key>
