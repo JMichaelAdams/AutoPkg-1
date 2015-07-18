@@ -15,7 +15,7 @@
     <array>
         <dict>
             <key>Processor</key>
-            <string>com.github.Ubertec.shared/AppleSupportDownloadInfoProvider</string>
+            <string>com.github.Ubertec.Processors/AppleSupportDownloadInfoProvider</string>
             <key>Arguments</key>
             <dict>
                 <key>ARTICLE_NUMBER</key>
