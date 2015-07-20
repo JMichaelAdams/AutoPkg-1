@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest NVIDIA CUDA driver for Mac from the NVDIA web site. PLEASE NOTE: This package, while recommended by some vendors, such as Adobe for After Effects, is not signed. Neither is any of the software being installed, which is mostly system-level (ex. kexts or Extensions, Frameworks, and libraries). The installer pkg is also served over HTTP. It is pretty much a trifecta of security fail. But... for many situations until NVIDIA fixes this, it is all we have to work with.</string>
+	<string>Downloads the latest NVIDIA CUDA driver for Mac from the NVDIA web site.</string>
 	<key>Identifier</key>
 	<string>com.github.Ubertec.download.CudaDriver</string>
 	<key>Input</key>
