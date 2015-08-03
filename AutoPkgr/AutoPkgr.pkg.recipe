@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the current release version of AutoPkgr and builds a package. The installer package includes a preinstall script that will check for an existing AutoPkgr.app in /Applications and remove it if found.</string>
+    <string>Downloads the current release version of AutoPkgr and builds a package.</string>
     <key>Identifier</key>
     <string>com.github.Ubertec.pkg.AutoPkgr</string>
     <key>Input</key>
@@ -66,8 +66,6 @@
                     <string>com.lindegroup.AutoPkgr</string>
                     <key>options</key>
                     <string>purge_ds_store</string>
-                    <key>scripts</key>
-                    <string>Scripts</string>
                     <key>chown</key>
                     <array>
                         <dict>
