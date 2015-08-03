@@ -69,7 +69,7 @@
             <string>%MUNKI_REPO_SUBDIR%</string>
             <key>additional_makepkginfo_options</key>
             <array>
-              <string>--destinationpath</string>
+              <string>destinationpath</string>
               <string>%APP_DESTINATION%</string>
             </array>
           </dict>
