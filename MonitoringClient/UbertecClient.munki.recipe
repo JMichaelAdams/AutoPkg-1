@@ -11,27 +11,27 @@
         <key>NAME</key>
         <string>Monitoring Client</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>monitoring</string>
-        <key>MUNKI_CATEGORY</key>
-        <string>Utilities</string>
+        <string>monitoring/%NAME%</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
             <array>
                 <string>testing</string>
             </array>
-            <key>category</key>
-            <string>%MUNKI_CATEGORY%</string>
             <key>description</key>
             <string>The Ubertec Monitoring Client facilitates the monitoring & reporting of any client characteristics within an Organization</string>
             <key>developer</key>
             <string>Ubertec Ltd</string>
             <key>display_name</key>
-            <string>Ubertec Monitoring Client</string>
+            <string>Ubertec-Monitoring-Client</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>
             <true/>
+            <key>supported_architectures</key>
+            <array>
+                <string>x86_64</string>
+            </array>
         </dict>
     </dict>
     <key>MinimumVersion</key>
@@ -45,6 +45,10 @@
             <string>Unarchiver</string>
             <key>Arguments</key>
             <dict>
+            <key>archive_path</key>
+                <string>%pathname%</string>
+                <key>destination_path</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
                 <key>purge_destination</key>
                 <true/>
             </dict>
