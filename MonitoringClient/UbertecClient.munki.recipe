@@ -2,30 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>Description</key>
+    <string>Downloads TextMate 1.5.11 and imports into Munki. The URL
+is hardcoded because it's not likely to ever get another update.</string>
+    <key>Identifier</key>
+    <string>com.github.Ubertec.munki.UbertecClient</string>
     <key>Input</key>
     <dict>
-        <key>APP_DESTINATION</key>
-        <string>/Applications</string>
-        <key>IDENTIFIER</key>
-        <string>com.github.Ubertec.UbertecClient.munki</string>
         <key>NAME</key>
-        <string>Opera</string>
+        <string>Monitoring Client</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>opera/opera</string>
+        <string>monitoring</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
             <array>
                 <string>testing</string>
             </array>
-            <key>category</key>
-            <string>Monitoring</string>
             <key>description</key>
-            <string>The Ubertec Monitoring Client reports System specific warning events.</string>
-            <key>developer</key>
-            <string>Ubertec</string>
+            <string>The Ubertec Monitoring Client facilitates the monitoring & reporting of any client characteristics within an Organization</string>
             <key>display_name</key>
-            <string>Monitoring Client</string>
+            <string>Ubertec Monitoring Client</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>
@@ -33,59 +30,38 @@
         </dict>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.1</string>
+    <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.Ubertec.UbertecClient.download</string>
+    <string>com.github.autopkg.download.UbertecClient</string>
     <key>Process</key>
     <array>
         <dict>
+            <key>Processor</key>
+            <string>Unarchiver</string>
             <key>Arguments</key>
             <dict>
-                <key>dmg_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
-                <key>dmg_root</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                <key>purge_destination</key>
+                <true/>
             </dict>
+        </dict>
+        <dict>
             <key>Processor</key>
             <string>DmgCreator</string>
-        </dict>
-        <dict>
             <key>Arguments</key>
             <dict>
-                <key>input_plist_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%/Opera.app/Contents/Info.plist</string>
-                <key>plist_version_key</key>
-                <string>CFBundleVersion</string>
+                <key>dmg_root</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                <key>dmg_path</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
             </dict>
-            <key>Processor</key>
-            <string>Versioner</string>
         </dict>
         <dict>
             <key>Arguments</key>
             <dict>
-                <key>additional_pkginfo</key>
-                <dict>
-                    <key>version</key>
-                    <string>%version%</string>
-                </dict>
-            </dict>
-            <key>Processor</key>
-            <string>MunkiPkginfoMerger</string>
-        </dict>
-        <dict>
-            <key>Arguments</key>
-            <dict>
-                <key>additional_makepkginfo_options</key>
-                <array>
-                    <string>--destinationpath</string>
-                    <string>%APP_DESTINATION%</string>
-                </array>
                 <key>pkg_path</key>
                 <string>%dmg_path%</string>
                 <key>repo_subdirectory</key>
                 <string>%MUNKI_REPO_SUBDIR%</string>
-                <key>version_comparison_key</key>
-                <string>CFBundleVersion</string>
             </dict>
             <key>Processor</key>
             <string>MunkiImporter</string>
