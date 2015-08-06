@@ -3,8 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads TextMate 1.5.11. The URL
-is hardcoded because it's not likely to ever get another update.</string>
+    <string>Downloads Monitoring Client</string>
     <key>Identifier</key>
     <string>com.github.Ubertec.download.UbertecClient</string>
     <key>Input</key>
