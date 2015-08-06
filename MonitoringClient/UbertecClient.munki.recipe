@@ -3,8 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads TextMate 1.5.11 and imports into Munki. The URL
-is hardcoded because it's not likely to ever get another update.</string>
+    <string>Downloads Monitoring Client & imports into Munki</string>
     <key>Identifier</key>
     <string>com.github.Ubertec.munki.UbertecClient</string>
     <key>Input</key>
@@ -32,7 +31,7 @@ is hardcoded because it's not likely to ever get another update.</string>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.autopkg.download.UbertecClient</string>
+    <string>com.github.Ubertec.download.UbertecClient</string>
     <key>Process</key>
     <array>
         <dict>
