@@ -9,7 +9,7 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Monitoring Client</string>
+        <string>MonitoringClient.pkg</string>
         <key>MUNKI_REPO_SUBDIR</key>
         <string>monitoring</string>
         <key>pkginfo</key>
@@ -42,17 +42,6 @@
     <array>
         <dict>
             <key>Processor</key>
-            <string>PkgExtractor</string>
-            <key>Arguments</key>
-            <dict>
-            <key>pkg_path</key>
-                <string>%pathname%</string>
-                <key>extract_root</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
             <string>DmgCreator</string>
             <key>Arguments</key>
             <dict>
@@ -61,10 +50,10 @@
                 <key>dmg_path</key>
                 <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
             </dict>
-        <dict>
-            <key>Processor</key>
-            <string>MunkiImporter</string>
-        </dict>
+                <dict>
+                    <key>Processor</key>
+                     <string>MunkiImporter</string>
+                </dict>
         </dict>
     </array>
 </dict>
