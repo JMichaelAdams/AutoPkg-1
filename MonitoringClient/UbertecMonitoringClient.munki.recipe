@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads Monitoring Client then imports into Munki</string>
     <key>Identifier</key>
-    <string>com.github.Ubertec.munki.UbertecClient</string>
+    <string>com.github.Ubertec.munki.UbertecMonitoringClient</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -37,7 +37,7 @@
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.Ubertec.download.UbertecClient</string>
+    <string>com.github.Ubertec.download.UbertecMonitoringClient</string>
     <key>Process</key>
     <array>
         <dict>
