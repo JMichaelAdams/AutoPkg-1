@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>Monitoring Client</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>monitoring/%NAME%</string>
+        <string>monitoring</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -23,7 +23,7 @@
             <key>developer</key>
             <string>Ubertec Ltd</string>
             <key>display_name</key>
-            <string>Ubertec-Monitoring-Client</string>
+            <string>Ubertec Monitoring Client</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>
