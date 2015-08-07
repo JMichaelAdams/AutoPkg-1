@@ -42,12 +42,12 @@
     <array>
         <dict>
             <key>Processor</key>
-            <string>Unarchiver</string>
+            <string>PkgExtractor</string>
             <key>Arguments</key>
             <dict>
             <key>pkg_path</key>
                 <string>%pathname%</string>
-                <key>destination_path</key>
+                <key>extract_root</key>
                 <string>%RECIPE_CACHE_DIR%/%NAME%</string>
                 <key>purge_destination</key>
                 <true/>
