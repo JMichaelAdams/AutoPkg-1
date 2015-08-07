@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Download recipe for TextWrangler. Finds and downloads the latest TextWrangler release.</string>
     <key>Identifier</key>
-    <string>com.github.Ubertec.download.textwrangler</string>
+    <string>com.github.Ubertec.download.TextWrangler</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
