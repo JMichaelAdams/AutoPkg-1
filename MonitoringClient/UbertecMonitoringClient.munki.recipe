@@ -49,8 +49,6 @@
                 <string>%pathname%</string>
                 <key>extract_root</key>
                 <string>%RECIPE_CACHE_DIR%/%NAME%</string>
-                <key>purge_destination</key>
-                <true/>
             </dict>
         </dict>
         <dict>
