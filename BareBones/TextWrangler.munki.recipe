@@ -6,7 +6,7 @@
     <string>Imports TextWrangler into Munki, adding a postinstall_script that installs 
 the command-line tools.</string>
     <key>Identifier</key>
-    <string>com.github.Ubertec.munki.textwrangler</string>
+    <string>com.github.Ubertec.munki.TextWrangler</string>
     <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIR</key>
@@ -51,7 +51,7 @@ done
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.Ubertec.download.textwrangler</string>
+    <string>com.github.Ubertec.download.TextWrangler</string>
     <key>Process</key>
     <array>
         <dict>
