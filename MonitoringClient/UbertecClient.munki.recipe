@@ -74,11 +74,6 @@
             </dict>
             <key>Processor</key>
             <string>MunkiImporter</string>
-            <key>Arguments</key>
-			<dict>
-				<key>pkg_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%.dmg/MonitoringClient-6.1.4-Installer-Package</string>
-			</dict>
         </dict>
     </array>
 </dict>
