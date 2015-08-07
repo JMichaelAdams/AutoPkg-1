@@ -68,12 +68,17 @@
             <key>Arguments</key>
             <dict>
                 <key>pkg_path</key>
-                <string>%dmg_path%/MonitoringClient-6.1.4-Installer-Package</string>
+                <string>%dmg_path%</string>
                 <key>repo_subdirectory</key>
                 <string>%MUNKI_REPO_SUBDIR%</string>
             </dict>
             <key>Processor</key>
             <string>MunkiImporter</string>
+            <key>Arguments</key>
+			<dict>
+				<key>pkg_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%.dmg/MonitoringClient-6.1.4-Installer-Package</string>
+			</dict>
         </dict>
     </array>
 </dict>
