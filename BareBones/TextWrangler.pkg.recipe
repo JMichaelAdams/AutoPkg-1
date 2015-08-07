@@ -14,7 +14,7 @@
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.Ubertec.download.textwrangler</string>
+    <string>com.github.Ubertec.download.TextWrangler</string>
     <key>Process</key>
     <array>
         <dict>
