@@ -42,7 +42,8 @@
 			</dict>
 			<key>Processor</key>
 			<string>MunkiImporter</string>
-		
+			<key>pkg_path</key>
+			<string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
 		</dict>
 	</array>
 </dict>
