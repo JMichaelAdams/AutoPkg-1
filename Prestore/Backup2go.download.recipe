@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Onyx client for OSX Yosemite.</string>
+    <string>Downloads the latest Backup2go client for OSX Yosemite.</string>
     <key>Identifier</key>
     <string>com.github.Ubertec.download.Backup2go</string>
     <key>Input</key>
