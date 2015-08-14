@@ -9,7 +9,7 @@
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>ADPassMon</string>
+		<string>UbertecMonitoringClient</string>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps</string>
 		<key>MUNKI_CATEGORY</key>
@@ -18,7 +18,7 @@
 		<dict>
 			<key>blocking_applications</key>
 			<array>
-				<string>Ubertec Monitoring Client</string>
+				<string>UbertecMonitoringClient</string>
 			</array>
 			<key>catalogs</key>
 			<array>
