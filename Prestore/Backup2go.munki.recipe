@@ -2,47 +2,53 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Description</key>
-	<string>Downloads the latest Backup2Go client for OSX Yosemite and imports it into a Munki repo.</string>
-	<key>Identifier</key>
-	<string>com.github.Ubertec.munki.Backup2go</string>
-	<key>Input</key>
-	<dict>
-		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps</string>
-		<key>NAME</key>
-		<string>Backup2go</string>
-		<key>pkginfo</key>
-		<dict>
-			<key>catalogs</key>
-			<array>
-				<string>testing</string>
-			</array>
-			<key>description</key>
-			<string>Professional Backup, Archiving and Cloning made easy</string>
-			<key>display_name</key>
-			<string>Prestore Backup2go 10.6 to 10.10</string>
-			<key>name</key>
-			<string>%NAME%</string>
-			<key>unattended_install</key>
-			<true/>
-		</dict>
-	</dict>
-	<key>MinimumVersion</key>
-	<string>0.4.0</string>
-	<key>ParentRecipe</key>
-	<string>com.github.Ubertec.download.Backup2go</string>
-	<key>Process</key>
-	<array>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>repo_subdirectory</key>
-				<string>%MUNKI_REPO_SUBDIR%</string>
-			</dict>
-			<key>Processor</key>
-			<string>MunkiImporter</string>
-		</dict>
-	</array>
+    <key>Description</key>
+    <string>Downloads the current release version of Amethyst and imports into Munki.</string>
+    <key>Identifier</key>
+    <string>com.github.Ubertec.munki.Backup2go</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>Amethyst</string>
+        <key>MUNKI_REPO_SUBDIR</key>
+        <string>apps</string>
+        <key>pkginfo</key>
+        <dict>
+            <key>catalogs</key>
+            <array>
+                <string>testing</string>
+            </array>
+            <key>description</key>
+            <string>Prestore Backup client Backup 2 go</string>
+            <key>display_name</key>
+            <string>Backup2go</string>
+            <key>name</key>
+            <string>%NAME%</string>
+            <key>unattended_install</key>
+            <true/>
+            <key>category</key>
+            <string>Backup</string>
+            <key>developer</key>
+            <string>Prestore</string>
+        </dict>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.3.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.Ubertec.download.Backup2go</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+        </dict>
+    </array>
 </dict>
 </plist>
