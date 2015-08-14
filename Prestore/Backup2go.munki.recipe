@@ -19,9 +19,9 @@
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string>Professional Backup, Archiving & Cloning made easy</string>
+			<string>Professional Backup, Archiving and Cloning made easy</string>
 			<key>display_name</key>
-			<string>Prestore Backup2go 10.6-10.10</string>
+			<string>Prestore Backup2go 10.6 to 10.10</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
