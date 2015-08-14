@@ -37,13 +37,13 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>repo_subdirectory</key>
-				<string>%MUNKI_REPO_SUBDIR%</string>
+			<key>pkg_path</key>
+			<string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
+			<key>repo_subdirectory</key>
+			<string>%MUNKI_REPO_SUBDIR%</string>
 			</dict>
 			<key>Processor</key>
 			<string>MunkiImporter</string>
-			<key>pkg_path</key>
-			<string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
 		</dict>
 	</array>
 </dict>
