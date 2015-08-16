@@ -70,7 +70,6 @@ the prefPane bundle, which has historically had consistent versioning.
                 <key>pkgroot</key>
                 <string>%RECIPE_CACHE_DIR%/unpack/root/Library/Internet Plug-Ins/JavaAppletPlugin.plugin</string>
                 <key>pkgdirs</key>
-                <dict/>
             </dict>
             <key>Processor</key>
             <string>PkgRootCreator</string>
