@@ -149,7 +149,8 @@ the prefPane bundle, which has historically had consistent versioning.
                     <string>%RECIPE_CACHE_DIR%/unpack</string>
                 </array>
             </dict>
-            
+                <key>Processor</key>
+                <string>PathDeleter</string>
         </dict>
         <dict>
             <key>Arguments</key>
