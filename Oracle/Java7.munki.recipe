@@ -12,7 +12,7 @@ The package's receipt version is useless, so we make an installs item for
 the prefPane bundle, which has historically had consistent versioning.
 </string>
     <key>Identifier</key>
-    <string>com.github.Ubertec.munki.Java7</string>
+    <string>com.github.Ubertec.munki.OracleJava7</string>
     <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIR</key>
@@ -50,7 +50,7 @@ the prefPane bundle, which has historically had consistent versioning.
     <key>MinimumVersion</key>
     <string>0.2.9</string>
     <key>ParentRecipe</key>
-    <string>com.github.Ubertec.download.Java7</string>
+    <string>com.github.Ubertec.download.OracleJava7</string>
     <key>Process</key>
     <array>
         <dict>
