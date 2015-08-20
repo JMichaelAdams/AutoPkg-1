@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the Ubertec Monitoring Client & imports into Munki.</string>
+    <string>Downloads the Ubertec Monitoring Client and imports into Munki.</string>
     <key>Identifier</key>
     <string>com.github.Ubertec.munki.UbertecMonitoringClient</string>
     <key>Input</key>
