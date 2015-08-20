@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest version of MalwareBytes AdwareMedic and imports into Munki.</string>
+    <string>Downloads the latest release of AdwareMedic and imports into Munki.</string>
     <key>Identifier</key>
     <string>com.github.Ubertec.munki.AdwareMedic</string>
     <key>Input</key>
     <dict>
+        <key>MUNKI_REPO_SUBDIR</key>
+        <string>apps</string>
         <key>NAME</key>
         <string>AdwareMedic</string>
-        <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps/AdwareMedic</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -19,13 +19,11 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>Useful in removing Adware and Malware from your Mac</string>
+            <string>AdwareMedic</string>
             <key>display_name</key>
             <string>AdwareMedic</string>
             <key>name</key>
             <string>%NAME%</string>
-            <key>minimum_os_version</key>
-            <string>10.6</string>
             <key>unattended_install</key>
             <true/>
         </dict>
@@ -37,51 +35,6 @@
     <key>Process</key>
     <array>
         <dict>
-            <key>Processor</key>
-            <string>Unarchiver</string>
-            <key>Arguments</key>
-            <dict>
-                <key>archive_path</key>
-                <string>%pathname%</string>
-                <key>destination_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
-                <key>purge_destination</key>
-                <true/>
-            </dict>
-        </dict>
-    <dict>
-    <key>Processor</key>
-    <string>PkgRootCreator</string>
-    <key>Arguments</key>
-        <dict>
-        <key>pkgroot</key>
-        <string>%RECIPE_CACHE_DIR%/%NAME%</string>
-        <key>pkgdirs</key>
-        <key>Applications</key>
-        <string>01775</string>
-        </dict>
-    </dict>
-        <dict>
-        <key>Processor</key>
-        <string>Copier</string>
-        <key>Arguments</key>
-            <dict>
-            <key>source_path</key>
-            <string>%pathname%/AdwareMedic.app</string>
-            <key>destination_path</key>
-            <string>%pkgroot%/Applications/AdwareMedic.app</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>DmgCreator</string>
-            <key>Arguments</key>
-            <dict>
-                <key>dmg_root</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%/*.app</string>
-                <key>dmg_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
-            </dict>
             <key>Arguments</key>
             <dict>
                 <key>pkg_path</key>
