@@ -67,8 +67,6 @@
         <dict>
             <key>Arguments</key>
             <dict>
-                <key>pkgroot</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg/MonitoringClient.pkg</string>
                 <key>pkgtype</key>
                 <string>bundle</string>
                 <key>version</key>
@@ -77,6 +75,8 @@
                 <string>%RECIPE_CACHE_DIR%/%NAME%.dmg/MonitoringClient.pkg/Contents</string>
                 <key>infofile</key>
                 <string>%MUNKI_REPO_SUBDIR%/apps/MonitoringClient</string>
+                <key>pkgroot</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg/MonitoringClient.pkg</string>
             </dict>
             <key>Processor</key>
             <string>MunkiImporter</string>
