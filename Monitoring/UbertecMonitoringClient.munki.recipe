@@ -62,7 +62,7 @@
         </dict>
         <dict>
             <key>Processor</key>
-            <string>PkginfoCreator</string>
+            <string>PkgInfoCreator</string>
         </dict>
         <dict>
             <key>Arguments</key>
