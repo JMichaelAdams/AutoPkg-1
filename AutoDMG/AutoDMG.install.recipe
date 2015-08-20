@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads AutoDMG 1.5.3 & installs it. URL in Download Recipe will need to be updated with latest release</string>
+    <string>Downloads AutoDMG 1.5.3 and installs it. URL in Download Recipe will need to be updated with latest release</string>
     <key>Identifier</key>
     <string>com.github.Ubertec.install.AutoDMG</string>
     <key>Input</key>
