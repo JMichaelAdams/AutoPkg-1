@@ -103,7 +103,9 @@
                         </dict>
                     </array>
                 </dict>
-            <dict>
+            </dict>
+        </dict>
+        <dict>
             <key>Processor</key>
             <string>DmgCreator</string>
             <key>Arguments</key>
