@@ -3,35 +3,31 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads Monitoring Client then imports into Munki</string>
+    <string>Downloads the Ubertec Monitoring Client & imports into Munki.</string>
     <key>Identifier</key>
     <string>com.github.Ubertec.munki.UbertecMonitoringClient</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Monitoring Client</string>
+        <string>MonitoringClient</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>monitoring</string>
+        <string>apps/MonitoringClient</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
             <array>
-            <string>testing</string>
+                <string>testing</string>
             </array>
             <key>description</key>
-            <string>The Ubertec Monitoring Client facilitates the monitoring and reporting of any client characteristics within an Organization</string>
-            <key>developer</key>
-            <string>Ubertec Ltd</string>
+            <string>Monitor your Clients Client's</string>
             <key>display_name</key>
-            <string>Ubertec Monitoring Client</string>
+            <string>MonitoringClient</string>
             <key>name</key>
             <string>%NAME%</string>
+            <key>minimum_os_version</key>
+            <string>10.6</string>
             <key>unattended_install</key>
             <true/>
-            <key>supported_architectures</key>
-            <array>
-            <string>x86_64</string>
-            </array>
         </dict>
     </dict>
     <key>MinimumVersion</key>
@@ -42,14 +38,18 @@
     <array>
         <dict>
             <key>Processor</key>
-            <string>PkgExtractor</string>
+            <string>Unarchiver</string>
             <key>Arguments</key>
             <dict>
-                <key>pkg_path</key>
+                <key>archive_path</key>
                 <string>%pathname%</string>
-                <key>extract_root</key>
+                <key>destination_path</key>
                 <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                <key>purge_destination</key>
+                <true/>
             </dict>
+        </dict>
+        <dict>
             <key>Processor</key>
             <string>DmgCreator</string>
             <key>Arguments</key>
@@ -59,10 +59,21 @@
                 <key>dmg_path</key>
                 <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
             </dict>
-                <dict>
-                <key>Processor</key>
-                <string>MunkiImporter</string>
-                </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>MunkiPkginfoMerger</string>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%dmg_path%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
         </dict>
     </array>
 </dict>
