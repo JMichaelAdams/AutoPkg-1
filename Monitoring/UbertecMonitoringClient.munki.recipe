@@ -50,8 +50,6 @@
                 <key>extract_root</key>
                 <string>%RECIPE_CACHE_DIR%/%NAME%</string>
             </dict>
-        </dict>
-        <dict>
             <key>Processor</key>
             <string>DmgCreator</string>
             <key>Arguments</key>
@@ -61,9 +59,10 @@
                 <key>dmg_path</key>
                 <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
             </dict>
-        <dict>
-            <key>Processor</key>
-            <string>MunkiImporter</string>
+                <dict>
+                <key>Processor</key>
+                <string>MunkiImporter</string>
+                </dict>
         </dict>
     </array>
 </dict>
