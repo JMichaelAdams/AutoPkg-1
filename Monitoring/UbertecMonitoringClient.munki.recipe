@@ -62,15 +62,21 @@
         </dict>
         <dict>
             <key>Processor</key>
-            <string>MunkiPkginfoMerger</string>
+            <string>PkginfoCreator</string>
         </dict>
         <dict>
             <key>Arguments</key>
             <dict>
-                <key>pkg_path</key>
-                <string>%dmg_path%</string>
-                <key>repo_subdirectory</key>
-                <string>%MUNKI_REPO_SUBDIR%</string>
+                <key>pkgroot</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg/MonitoringClient.pkg</string>
+                <key>pkgtype</key>
+                <string>bundle</string>
+                <key>version</key>
+                <string>6.1.4</string>
+                <key>template_path</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg/MonitoringClient.pkg/Contents</string>
+                <key>infofile</key>
+                <string>%MUNKI_REPO_SUBDIR%/apps/MonitoringClient</string>
             </dict>
             <key>Processor</key>
             <string>MunkiImporter</string>
