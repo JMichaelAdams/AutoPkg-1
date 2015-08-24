@@ -9,12 +9,12 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>MalwareBytes</string>
+        <string>AdwareMedic</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.Ubertec.install.AdwareMedic</string>
+    <string>com.github.Ubertec.download.AdwareMedic</string>
     <key>Process</key>
     <array>
         <dict>
