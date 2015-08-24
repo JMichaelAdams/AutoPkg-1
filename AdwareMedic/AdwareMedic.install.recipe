@@ -14,7 +14,7 @@
     <key>MinimumVersion</key>
     <string>0.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.Ubertec.pkg.AdwareMedic</string>
+    <string>com.github.Ubertec.install.AdwareMedic</string>
     <key>Process</key>
     <array>
         <dict>
