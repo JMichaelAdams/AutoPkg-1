@@ -30,7 +30,8 @@ URLS = {
 	"ParallelsDesktop7": "http://update.parallels.com/desktop/v7/parallels/parallels_updates.xml",
     "ParallelsDesktop8": "http://update.parallels.com/desktop/v8/parallels/parallels_updates.xml",
     "ParallelsDesktop9": "http://update.parallels.com/desktop/v9/parallels/parallels_updates.xml",
-    "ParallelsDesktop10": "http://update.parallels.com/desktop/v10/parallels/parallels_updates.xml"
+    "ParallelsDesktop10": "http://update.parallels.com/desktop/v10/parallels/parallels_updates.xml",
+    "ParallelsDesktop11": "http://update.parallels.com/desktop/v11/parallels/parallels_updates.xml"
         }
 
 class ParallelsURLProvider(Processor):
@@ -38,7 +39,7 @@ class ParallelsURLProvider(Processor):
     input_variables = {
         "product_name": {
         "required": True,
-        "description": "Product to fetch URL for. One of 'ParallelsDesktop6', 'ParallelsDesktop7', 'ParallelsDesktop8', 'ParallelsDesktop9', 'ParallelsDesktop10'.",
+        "description": "Product to fetch URL for. One of 'ParallelsDesktop6', 'ParallelsDesktop7', 'ParallelsDesktop8', 'ParallelsDesktop9', 'ParallelsDesktop10', 'ParallelsDesktop11.",
         },
     }
     output_variables = {
