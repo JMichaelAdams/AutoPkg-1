@@ -7,7 +7,7 @@
     <key>Input</key>
     <dict>
         <key>IDENTIFIER</key>
-        <string>com.github.Ubertec.ParallelsDesktop.download</string>
+        <string>com.github.Ubertec.download.ParallelsDesktop</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.1</string>
