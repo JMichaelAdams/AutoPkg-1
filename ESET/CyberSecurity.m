@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the latest release of ESET CyberSecurity and imports into Munki.</string>
+    <key>Identifier</key>
+    <string>com.github.Ubertec.munki.CyberSecurity</string>
+    <key>Input</key>
+    <dict>
+        <key>MUNKI_REPO_SUBDIR</key>
+        <string>apps</string>
+        <key>NAME</key>
+        <string>ESET CyberSecurity</string>
+        <key>pkginfo</key>
+        <dict>
+            <key>catalogs</key>
+            <array>
+                <string>testing</string>
+            </array>
+            <key>description</key>
+            <string>ESET CyberSecurity is fast and powerful Internet security for Mac powered by record-breaking technology.</string>
+            <key>display_name</key>
+            <string>ESET CyberSecurity</string>
+            <key>name</key>
+            <string>%NAME%</string>
+            <key>unattended_install</key>
+            <true/>
+        </dict>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.2.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.Ubertec.download.CyberSecurity</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkgroot</key>
+                <string>%RECIPE_CACHE_DIR%/EsetCS</string>
+                <key>pkgdirs</key>
+                <dict/>
+            </dict>
+            <key>Processor</key>
+            <string>PkgRootCreator</string>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>source_path</key>
+                <string>%RECIPE_CACHE_DIR%/downloads/eset_cybersecurity_en.dmg/Resources/Installer.pkg</string>
+                <key>destination_path</key>
+                <string>%RECIPE_CACHE_DIR%/EsetCS/CyberSecurity.pkg</string>
+                <key>overwrite</key>
+                <true/>
+            </dict>
+            <key>Processor</key>
+            <string>Copier</string>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>DmgCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>dmg_root</key>
+                <string>%RECIPE_CACHE_DIR%/EsetCS</string>
+                <key>dmg_path</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%dmg_path%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+        </dict>
+    </array>
+</dict>
+</plist>
