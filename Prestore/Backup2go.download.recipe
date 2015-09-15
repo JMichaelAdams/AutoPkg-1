@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>Backup2go</string>
         <key>DOWNLOAD_URL</key>
-        <string>http://presstore_downloads.s3.amazonaws.com/awpst520.dmg</string>
+        <string>http://presstore_downloads.s3.amazonaws.com/awpst521.dmg</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
