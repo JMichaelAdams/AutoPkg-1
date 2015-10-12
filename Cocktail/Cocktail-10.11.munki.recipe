@@ -9,7 +9,7 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Cocktail-10.10</string>
+        <string>Cocktail-10.11</string>
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps/Cocktail</string>
         <key>pkginfo</key>
