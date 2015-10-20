@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>Jing</string>
         <key>SPARKLE_FEED_URL</key>
-        <string>http://www.techsmith.com/redirect.asp?product=jing&ver=2.0.0&lang=enu&target=SparkleAppcast</string>
+        <string>http://www.techsmith.com/redirect.asp?product=jing&ampver=2.0.0&lang=enu&amptarget=SparkleAppcast</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
