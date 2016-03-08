@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Download recipe for the latest version of FileMaker Pro 14, currently 14.0.4.406.</string>
+    <string>Download recipe for the latest version of FileMaker Pro 14, currently 14.0.5.505.</string>
     <key>Identifier</key>
     <string>com.github.Ubertec.download.filemakerpro14</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>FileMakerPro14</string>
+        <string>FileMakerPro14.0.5</string>
         <key>DOWNLOAD_URL</key>
         <string>http://fmdl.filemaker.com/UPDT/14/fm_updater_14.0.5.505.dmg</string>
     </dict>
