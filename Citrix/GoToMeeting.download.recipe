@@ -34,7 +34,7 @@
             <key>Processor</key>
             <key>DISABLE_CODE_SIGNATURE_VERIFICATION</key>
             <string>True</string>
-            <dict>
+        </dict>
         <dict>
             <key>Processor</key>
             <string>Unarchiver</string>
