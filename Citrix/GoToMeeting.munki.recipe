@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest GoToMeeting disk image and imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.Ubertec.munki.GoToMeeting</string>
+    <string>com.github.ubertec.munki.GoToMeeting</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -30,12 +30,14 @@
             <string>Webinar Software</string>
             <key>developer</key>
             <string>Citrix</string>
+            <key>minimum_os_version</key>
+            <string>10.7</string>
         </dict>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.Ubertec.download.GoToMeeting</string>
+    <string>com.github.ubertec.download.GoToMeeting</string>
     <key>Process</key>
     <array>
         <dict>
